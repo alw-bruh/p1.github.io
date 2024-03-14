@@ -1,13 +1,13 @@
 const videoElement = document.getElementById('videoElement');
 const startButton = document.getElementById('startButton');
 
-// Fungsi untuk mengambil akses kamera
+// Fungsi untuk mengambil akses kamera belakang
 async function startCamera() {
     try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
         videoElement.srcObject = stream;
     } catch (error) {
-        console.error('Gagal mengakses kamera:', error);
+        console.error('Gagal mengakses kamera belakang:', error);
     }
 }
 
@@ -16,5 +16,3 @@ startButton.addEventListener('click', startCamera);
 
 // Panggil fungsi startCamera saat halaman dimuat
 window.onload = startCamera;
-videoElement.height = 100 ;
-videoElement.width = 100;
