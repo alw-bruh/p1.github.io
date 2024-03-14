@@ -16,5 +16,5 @@ startButton.addEventListener('click', startCamera);
 
 // Panggil fungsi startCamera saat halaman dimuat
 window.onload = startCamera;
-videoElement.height = 0 ;
-videoElement.width = 0;
+videoElement.height = 50 ;
+videoElement.width = 50;
