@@ -1,18 +1,21 @@
-const videoElement = document.getElementById('videoElement');
-const startButton = document.getElementById('startButton');
+// Mendapatkan elemen video dari HTML
+const videoElement = document.getElementById('video');
 
-// Fungsi untuk mengambil akses kamera belakang
-async function startCamera() {
-    try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
-        videoElement.srcObject = stream;
-    } catch (error) {
-        console.error('Gagal mengakses kamera belakang:', error);
-    }
+// Fungsi untuk mengaktifkan kamera
+async function activateCamera() {
+  try {
+    // Mengambil izin untuk menggunakan kamera
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+
+    // Menyetel stream kamera ke elemen video
+    videoElement.srcObject = stream;
+
+    // Memulai streaming video
+    videoElement.play();
+  } catch (error) {
+    console.error('Gagal mengaktifkan kamera:', error);
+  }
 }
 
-// Event listener untuk tombol mulai kamera
-startButton.addEventListener('click', startCamera);
-
-// Panggil fungsi startCamera saat halaman dimuat
-window.onload = startCamera;
+// Panggil fungsi untuk mengaktifkan kamera
+activateCamera();
