@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+  display: flex;
+
+}
+#header-mask {
+  position: relative;
+  -webkit-mask-img: url("_storage_emulated_0_Pictures_Canva_VISINO_20240805_235722_0000.svg");
+  mask-image: url("_storage_emulated_0_Pictures_Canva_VISINO_20240805_235722_0000.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-position: center;
+  display: flex;
+
+  border-style: solid;
+  border-width: 0.1px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+  height: 100vw;
+}
+#header #text-header1 {
+  position: absolute;
+  color: #000000;
+  width: 100%;
+
+  height: 100vw;
+
+  margin-left: 10%;
+}
+#text-header1 h1 {
+  margin-top: 100px;
+  font-size: 44px;
+
+  margin-bottom: 0px;
+  font-family: nura;
+}
+#text-header1 h3 {
+  margin-top: 0px;
+  font-family: nura;
+  font-weight: 100;
+}
+#text-header1 h2 {
+  font-weight: 200;
+  font-size: 44px;
+  font-family: nura;
+  margin-top: 36px;
+}
+#header #text-header2 {
+  color: aliceblue;
+  position: absolute;
+  
+  height: 100vw;
+  margin: auto;
+  margin-left: 10%;
+}
+#header #text-header2 h1 {
+  font-size: 44px;
+  margin-top: 100px;
+
+  margin-bottom: 0px;
+  font-family: nura;
+}
+#header #text-header2 h3 {
+  margin-top: 0px;
+  font-family: nura;
+  font-weight: 100;
+}
+#header #text-header2 h2 {
+  font-weight: 200;
+  font-size: 44px;
+  font-family: nura;
+  margin-top: 36px;
+}
+
+#header img {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+  opacity: 0.75;
+}
+#about {
+  position: sticky;
+  padding-top: 36px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-width: 0.1px;
+  border-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+}
+#about-info {
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+  margin: px;
+  padding: 12px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+#about-info button {
+  align-self: flex-end;
+  margin: 12px;
+  height: 24px;
+  border-style: none;
+  background-color: rgba(44, 64, 81, 0);
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+#links {
+  margin-top: 44px;
+  margin-bottom: 44px;
+
+  display: flex;
+  justify-content: center;
+}
+#links .link-item {
+  display: flex;
+
+  margin: auto;
+}
+#links .link-item a svg {
+  color: black;
+  width: 24px;
+  height: 24px;
+}
+
+#exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 48px;
+  font-size: 12px;
+  font-weight: 100;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 48px;
+}
+
+#exp div {
+  width: 288px;
+  display: grid;
+  grid-template-areas:
+    "title-exp button"
+    "sub-exp button";
+  grid-template-rows: auto auto 64px;
+  grid-template-columns: 1fr auto;
+  height: 64px;
+  padding-left: 6px;
+  margin-top: 20px;
+  font-weight: 100;
+  border-style: solid;
+  border-width: 0.1px;
+}
+#exp div h1 {
+  grid-area: title-exp;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 200;
+}
+#exp div p {
+  grid-area: sub-exp;
+  margin-top: 0px;
+}
+#exp div button {
+  background-color: #393939;
+  border-style: none;
+  width: 64px;
+  height: 64px;
+  grid-area: button;
+}
+#exp div button svg {
+  color: aliceblue;
+  width: 24px;
+  height: 24px;
+}
+
+#tools {
+  display: flex;
+
+  justify-content: center;
+}
+#tools div {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+
+  justify-content: center;
+  gap: 12px;
+  width: 312px;
+  height: 312px;
+}
+#tools .item-tools {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.1px;
+  width: 78px;
+  height: 78px;
+}
+#tools .item-tools svg {
+  width: 44px;
+  height: 44px;
+}
