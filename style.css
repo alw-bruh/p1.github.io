@@ -3,12 +3,13 @@ body {
 }
 #header {
 border: solid;
+max-height: 720px;
 }
 #header-mask {
  
   position: relative;
-  -webkit-mask-img: url("img.svg");
-  mask-image: url("img.svg");
+  -webkit-mask-img: url("img.png");
+  mask-image: url("img.png");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: cover;
