@@ -2,13 +2,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 #header {
-  display: flex;
-
+border: solid;
 }
 #header-mask {
+ 
   position: relative;
-  -webkit-mask-img: url("_storage_emulated_0_Pictures_Canva_VISINO_20240805_235722_0000.svg");
-  mask-image: url("_storage_emulated_0_Pictures_Canva_VISINO_20240805_235722_0000.svg");
+  -webkit-mask-img: url("img.svg");
+  mask-image: url("img.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: cover;
@@ -25,7 +25,7 @@ body {
 #header #text-header1 {
   position: absolute;
   color: #000000;
-  width: 100%;
+  max-width: 100%;
 
   height: 100vw;
 
@@ -52,7 +52,7 @@ body {
 #header #text-header2 {
   color: aliceblue;
   position: absolute;
-  
+  max-width: 100%;
   height: 100vw;
   margin: auto;
   margin-left: 10%;
@@ -102,7 +102,7 @@ body {
   border-style: solid;
 }
 #about-info {
-  width: 334px;
+  max-width: 334px;
   display: flex;
   flex-direction: column;
   margin: px;
@@ -160,7 +160,7 @@ body {
 }
 
 #exp div {
-  width: 288px;
+  max-width: 288px;
   display: grid;
   grid-template-areas:
     "title-exp button"
@@ -210,7 +210,7 @@ body {
 
   justify-content: center;
   gap: 12px;
-  width: 312px;
+  max-width: 312px;
   height: 312px;
 }
 #tools .item-tools {
