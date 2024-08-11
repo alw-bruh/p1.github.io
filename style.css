@@ -23,7 +23,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #161616;
-  font-size: 16px;
+  font-size: 12px;
 }
 nav svg {
   width: 64px;
@@ -134,6 +134,7 @@ nav svg {
   max-width: 334px;
   display: flex;
   flex-direction: column;
+  font-size: 12px;
   margin: 10px;
   padding: 12px;
 }
@@ -143,8 +144,9 @@ nav svg {
   height: 24px;
   border-style: none;
   background-color: rgba(44, 64, 81, 0);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: lighter;
+
 }
 
 #links {
