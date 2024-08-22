@@ -32,6 +32,7 @@ nav svg {
 #header {
   border: solid;
   max-height: 720px;
+  max-width: 350px ;
 }
 #header-mask {
   position: relative;
@@ -150,6 +151,7 @@ nav svg {
 }
 
 #links {
+  max-width: 350px ;
   margin-top: 44px;
   margin-bottom: 44px;
 
