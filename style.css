@@ -1,13 +1,17 @@
+/* Reset dan Pengaturan Font */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Navigasi */
 nav {
+  margin: auto;
   padding-top: 12px;
   display: flex;
   margin-bottom: 12px;
-  
- 
+    max-width: 360px;
 }
+
 nav ul {
   display: flex;
   margin-left: auto;
@@ -15,25 +19,43 @@ nav ul {
   margin-right: 12px;
 
 }
-nav ul li {
-    padding-left: 12px;
 
-    
+nav ul li {
+  padding-left: 12px;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #161616;
   font-size: 12px;
 }
+
 nav svg {
   width: 64px;
   height: 64px;
 }
+
+/* Top Section */
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.top-1 {
+  margin: auto;
+  width: 360px;
+}
+
+/* Header */
 #header {
   border: solid;
-  max-height: 720px;
-  max-width: 350px ;
+  max-height: 360px;
+  max-width: 360px;
 }
+
 #header-mask {
   position: relative;
   -webkit-mask-img: url("img.png");
@@ -43,63 +65,65 @@ nav svg {
   -webkit-mask-size: cover;
   mask-position: center top;
   display: flex;
-
   border-style: solid;
   border-width: 0.1px;
-  border-left: 0px;
-  border-right: 0px;
-
-  max-height: 720px;
+  border-left: 0;
+  border-right: 0;
+  max-height: 360px;
   width: 100%;
-  height: 100vw;
+  height: 360px;
 }
+
 #header #text-header1 {
   position: absolute;
   color: #000000;
   max-width: 1080px;
-
-  max-height: 720px;
-
+  max-height: 360px;
   margin-left: 10%;
 }
+
 #text-header1 h1 {
   margin-top: 100px;
   font-size: 44px;
-
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-family: nura;
 }
+
 #text-header1 h3 {
-  margin-top: 0px;
+  margin-top: 0;
   font-family: nura;
   font-weight: 100;
 }
+
 #text-header1 h2 {
   font-weight: 200;
   font-size: 44px;
   font-family: nura;
   margin-top: 36px;
 }
+
 #header #text-header2 {
   color: aliceblue;
   position: absolute;
   max-width: 100%;
-  height: 100vw;
+  max-height: 360px;
   margin: auto;
   margin-left: 10%;
 }
+
 #header #text-header2 h1 {
   font-size: 44px;
   margin-top: 100px;
-
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-family: nura;
 }
+
 #header #text-header2 h3 {
-  margin-top: 0px;
+  margin-top: 0;
   font-family: nura;
   font-weight: 100;
 }
+
 #header #text-header2 h2 {
   font-weight: 200;
   font-size: 44px;
@@ -110,27 +134,27 @@ nav svg {
 #header img {
   position: absolute;
   object-position: center top;
-
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   z-index: -1;
 }
+
+/* About Section */
 #about {
   position: sticky;
   padding-top: 36px;
-
   padding-bottom: 36px;
-  border-bottom: 0px;
+  border-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-style: solid;
 }
+
 #about-info {
   max-width: 334px;
   display: flex;
@@ -139,6 +163,7 @@ nav svg {
   margin: 10px;
   padding: 12px;
 }
+
 #about-info button {
   align-self: flex-end;
   margin: 12px;
@@ -147,35 +172,34 @@ nav svg {
   background-color: rgba(44, 64, 81, 0);
   font-size: 16px;
   font-weight: lighter;
-
 }
 
+/* Links */
 #links {
-  max-width: 350px ;
   margin-top: 44px;
   margin-bottom: 44px;
-
+  max-width: 360px;
   display: flex;
   justify-content: center;
 }
+
 #links .link-item {
   display: flex;
-
   margin: auto;
 }
+
 #links .link-item a svg {
   color: black;
   width: 24px;
   height: 24px;
 }
 
+/* Experience Section */
 #exp {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   justify-content: center;
-
   margin-top: 48px;
   font-size: 12px;
   font-weight: 100;
@@ -199,16 +223,19 @@ nav svg {
   border-style: solid;
   border-width: 0.1px;
 }
+
 #exp div h1 {
   grid-area: title-exp;
   margin-top: 12px;
   margin-bottom: 6px;
   font-weight: 200;
 }
+
 #exp div p {
   grid-area: sub-exp;
-  margin-top: 0px;
+  margin-top: 0;
 }
+
 #exp div button {
   background-color: #393939;
   border-style: none;
@@ -216,28 +243,30 @@ nav svg {
   height: 64px;
   grid-area: button;
 }
+
 #exp div button svg {
   color: aliceblue;
   width: 24px;
   height: 24px;
 }
 
+/* Tools Section */
 #tools {
   display: flex;
-
   justify-content: center;
 }
+
 #tools div {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-
   justify-content: center;
   gap: 12px;
   max-width: 312px;
   height: 312px;
 }
+
 #tools .item-tools {
   display: flex;
   text-align: center;
@@ -248,79 +277,83 @@ nav svg {
   width: 78px;
   height: 78px;
 }
+
 #tools .item-tools svg {
   width: 44px;
   height: 44px;
 }
 
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
-
   background-color: #161616;
   padding-bottom: 24px;
-
   color: aliceblue;
 }
+
 #nav-footer {
   padding: 12px;
 }
+
 #nav-footer h6 {
   font-size: small;
   margin-bottom: 12px;
 }
+
 #nav-footer a {
   color: aliceblue;
   font-size: 12px;
   text-decoration: none;
 }
 
-#links-footer #links-footer-container {
-  display: flex;
-}
+/* Links Footer */
 #links-footer {
   text-align: center;
   padding: 12px;
 }
+
 #links-footer a {
   color: aliceblue;
-  margin-top: 0px;
+  margin-top: 0;
   text-decoration: none;
   text-align: center;
-
   padding-left: 6px;
   padding-right: 6px;
   font-size: 12px;
 }
+
 #links-footer-container {
   margin-top: 24px;
-
   display: flex;
   justify-content: center;
 }
+
 #links-footer h6 {
   margin-bottom: 12px;
   font-size: small;
 }
+
 #footer-logo {
   text-align: center;
   margin-top: auto;
-
   padding: 12px;
   display: flex;
   flex-direction: column;
 }
-#footer-logo svg {
-  margin: 0px;
 
+#footer-logo svg {
+  margin: 0;
   width: 64px;
   height: 64px;
   padding: 12px;
 }
+
 #footer-logo h6 {
-  margin: 0px;
+  margin: 0;
 }
+
 #footer-logo p {
-  margin: 0px;
+  margin: 0;
   font-size: 9px;
 }
