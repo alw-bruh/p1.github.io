@@ -1,0 +1,35 @@
+{ "compressionlevel":-1,
+ "height":4,
+ "infinite":false,
+ "layers":[
+        {
+         "data":[882, 883, 884, 885,
+            914, 915, 916, 917,
+            946, 947, 948, 949,
+            978, 979, 980, 981],
+         "height":4,
+         "id":1,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":4,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":2,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.11.2",
+ "tileheight":8,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"2D_Cute_Platform_ALL_by_AxulArt.tsx"
+        }],
+ "tilewidth":8,
+ "type":"map",
+ "version":"1.10",
+ "width":4
+}

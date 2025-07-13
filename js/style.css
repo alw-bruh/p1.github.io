@@ -1,0 +1,58 @@
+body {
+  
+     display: block; /* or inline-block */
+  margin: 0;
+  padding: 0;
+   overflow: hidden;
+  
+   
+}
+canvas {
+    
+        display: block; /* or inline-block */
+  margin: 0;
+  padding: 0; 
+  background-color: rgb(189, 225, 255);
+}
+.button {
+      position: absolute;
+  bottom: 0px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  user-select: none;
+  width: 100%;
+  height: 25%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE/Edge */
+}
+.big-button {
+   transform: scale(1.2); /* Membesarkan ukuran 1.2x */
+  transition: transform 0.3s ease; /* Animasi halus */
+}
+.button button  {
+    height: 64px;
+    width: 64px;
+    margin:24px;
+    
+   
+}
+.popups {
+position: absolute;
+display: flex;
+flex-direction: column;
+text-align: center;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 254, 255);
+  border-radius: 0px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display: none; /* disembunyikan secara default */
+  z-index: 10;
+}
+.popups.show {
+  display: block;
+}
+button {
+  width:64px;
+  height: 34px;
+}

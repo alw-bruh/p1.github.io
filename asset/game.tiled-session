@@ -1,0 +1,183 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "player.tmj",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "2D_Cute_Platform_ALL_by_AxulArt.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.75
+        },
+        "8x8.tmj": {
+            "scale": 9.104166666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 15.926773455377575,
+                "y": 23.945080091533182
+            }
+        },
+        "Gate_Close.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.75
+        },
+        "Gate_Open.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.75
+        },
+        "Ground.tsx": {
+            "scaleInDock": 0.75
+        },
+        "Ground_1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.75
+        },
+        "Ground_Dekoration.tsx": {
+            "scaleInDock": 0.75
+        },
+        "buildfing.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "building.js": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 138,
+                "y": 310
+            }
+        },
+        "dungeon.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "game.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "map.tmj": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 530.6666666666666,
+                "y": 248
+            }
+        },
+        "map.tmx": {
+            "scale": 1,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 1702,
+                "y": 133
+            }
+        },
+        "map1.js": {
+            "scale": 1.1518749999999998,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 120.23874118285407,
+                "y": 27.780792186652207
+            }
+        },
+        "map1.tmx": {
+            "scale": 1.1518749999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 209.22409115572438,
+                "y": 126.31578947368425
+            }
+        },
+        "map2.js": {
+            "scale": 0.3455625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 399.3488876831253,
+                "y": 311.0869958401158
+            }
+        },
+        "map3.js": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400,
+                "y": 114.99999999999997
+            }
+        },
+        "pl.tmj": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1035,
+                "y": 307
+            }
+        },
+        "plat.tmj": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 837,
+                "y": 265
+            }
+        },
+        "platform.js": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 270.66666666666663,
+                "y": 29.33333333333333
+            }
+        },
+        "player.tmj": {
+            "scale": 10.2421875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 15.914569031273839,
+                "y": 21.577421815408087
+            }
+        },
+        "portal.tmj": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 800,
+                "y": 137.5
+            }
+        }
+    },
+    "last.exportedFilePath": "D:/project/asset",
+    "map.height": 40,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 200,
+    "openFiles": [
+        "portal.tmj",
+        "dungeon.tsx",
+        "map.tmx",
+        "8x8.tmj",
+        "player.tmj",
+        "map.tmj"
+    ],
+    "project": "game.tiled-project",
+    "recentFiles": [
+        "portal.tmj",
+        "dungeon.tsx",
+        "map.tmx",
+        "8x8.tmj",
+        "map.tmj",
+        "player.tmj",
+        "game.tsx",
+        "map2.js",
+        "map3.js",
+        "map1.tmx",
+        "buildfing.tsx",
+        "plat.tmj"
+    ]
+}
