@@ -1,8 +1,10 @@
+const keys = []
 const held = {
   up: false,
   left: false,
   right: false
 }
+
 document.addEventListener('keydown', (e) => {
 
   keys[e.key.toLowerCase()] = true
@@ -11,6 +13,8 @@ document.addEventListener('keydown', (e) => {
   if (e.key.toLowerCase() === 'w' && !isJumping) {
     velocity = -10
     isJumping = true
+    
+
   }
 })
 
@@ -47,3 +51,4 @@ document.addEventListener('mouseleave', () => {
 // Touch support
 document.addEventListener('touchstart', handlePress)
 document.addEventListener('touchend', handleRelease)
+

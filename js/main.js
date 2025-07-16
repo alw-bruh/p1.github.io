@@ -1,28 +1,27 @@
 function animate() {
     requestAnimationFrame(animate)
-    if (!players.loaded) return
+     c.save() // simpan state awal canvas
+
+   
+   
+    c.scale(zoom, zoom)
+
     c.fillStyle = 'rgb(189, 225, 255)'
-    c.fillRect(0, 0, canvas.width, canvas.height)
+    c.fillRect(0, 0, canvas.width, canvas.height,  canvas.width / zoom, canvas.height / zoom)
     bg.update()
     gd.update(0, bg.sizes[0].height)
-    platform.update()
+    
+
 
     y += velocity
     velocity += gravity
 
-    if (held.right) x += speed
-    if (held.left) x -= speed
-    if (held.up && !isJumping) {
-        velocity = -10
-        isJumping = true
-    }
 
-    cameraOffset.x = x - canvas.width / 2
 
-    if (y < 0) {
-        cameraOffset.y = y - 0
-    } else {
-        cameraOffset.y = 0 // atau batas maksimal
+    cameraOffset.x = x - reoffsetx / 2 + players.sizes.width
+
+    if (y <= bg.sizes[0].height) {
+        cameraOffset.y = y - reoffsety / 2 
     }
     if (x >= 0 - players.sizes.width && x + players.sizes.width <= gd.sizes[1].width + players.sizes.width) {
         if (velocity >= 0) {
@@ -45,7 +44,7 @@ function animate() {
     for (let i = 0; i < portals.length; i++) {
         const range = portals[i]
 
-        portal1.update(range.xStart, range.yStart)
+
 
         if (
             x + players.sizes.width > range.xStart &&
@@ -53,30 +52,38 @@ function animate() {
             y + players.sizes.height > range.yStart &&
             y < range.yEnd
         ) {
-            portal2.update(range.xStart, range.yStart)
+
             console.log("portal")
 
             inportal = true
+            show()
+            document.getElementById('yesbtn').onclick = function () {
+            }
             if (!isJumping) {
                 switch (i) {
                     case 0:
                         console.log("🌀 Portal pertama");
-                        document.getElementById("info").textContent = "ig"
-                        document.getElementById('link').href = 'https://www.instagram.com/alwilus/'
+                        document.getElementById("info").textContent = "Insta"
+                        document.getElementById('links').href = 'https://www.instagram.com/alwilus/'
+                        document.getElementById('link').classList.remove('declineButton')
+                        enterbtn()
                         break;
                     case 1:
                         console.log("🌀 Portal kedua");
-                         document.getElementById("info").textContent = "behance"
-                          document.getElementById('link').href = 'https://www.behance.net/artalw'
+                        document.getElementById("info").textContent = "Behance"
+                        document.getElementById('links').href = 'https://www.behance.net/artalw'
+                        document.getElementById('link').classList.remove('declineButton')
+                        enterbtn()
                         break;
                     default:
                         console.log("🌀 Portal lainnya");
-                         document.getElementById("info").textContent = "locked"
-                           document.getElementById('link').href = ''
+                        document.getElementById("info").textContent = "Locked"
+                        document.getElementById('links').href = ''
+                        document.getElementById('link').classList.add('declineButton')
+                        Lockedbtn()
+
                 }
-                show()
-                document.getElementById('yesbtn').onclick = function () {
-                }
+
             }
         }
         if (!inportal) {
@@ -102,25 +109,52 @@ function animate() {
                 }
             }
         }
-
-
     }
+    if (y + players.sizes.height > bg.sizes[0].height + canvas.height) {
+        respawn()
+    }
+    // true = kanan, false = kiri
 
-    if (y - players.sizes.height > canvas.height) {
-        y = 0
-        x = canvas.width / 2
-
-    } console.log(y)
-    if (keys['a']) {
+    // Gerakan horizontal
+    if (keys['a'] || held.left) {
         x -= speed
-    }
-    if (keys['d']) {
+        direction = false // arah terakhir menghadap kiri
+        players.walkLeft()
+    } else if (keys['d'] || held.right) {
         x += speed
+        direction = true // arah terakhir menghadap kanan
+        players.walkRight()
+    } else if (!isJumping) {
+        // Idle hanya jika tidak lompat
+        if (direction) {
+            players.setAction('idler') // idle kanan
+        } else {
+            players.setAction('idlel') // idle kiri
+        }
     }
 
+    // Lompat
+    if (held.up && !isJumping) {
+        velocity = -10
+        isJumping = true
+
+    }
+
+    // Saat player dalam keadaan lompat
+    if (isJumping) {
+        if (direction) {
+            players.setAction('jumpr')
+        } else {
+            players.setAction('jumpl')
+        }
+    }
+    console.log(y)
 
     players.update()
+    ftree.update()
+    c.restore() 
 }
+
 
 
 animate()

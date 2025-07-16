@@ -95,6 +95,14 @@ const platform = new Sprite({
 
 }
 )
+const ftree = new Sprite({
+    position: {
+        x: 0,
+        y: 0
+    },
+    imagesrc1: './asset/foreground.png',
+
+})
 const portal1 = new Sprite({
     position: {
         x: 0,
